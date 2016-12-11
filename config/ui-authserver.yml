@@ -1,4 +1,4 @@
-spring:
+security:
   oauth2:
     sso:
       home:
@@ -11,3 +11,4 @@ spring:
       clientSecret: myclientsecret
     resource:
       userInfoUri: http://localhost:9999/uaa/user
+ 
