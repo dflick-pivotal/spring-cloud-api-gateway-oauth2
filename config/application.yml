@@ -56,7 +56,7 @@ security:
       
 ---
 spring:
-  profiles: authserver-cloud
+  profiles: authservercloud
 security:
   oauth2:
     sso:
