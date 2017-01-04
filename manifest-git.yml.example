@@ -1,0 +1,25 @@
+---
+instances: 1
+memory: 1G
+applications:
+- name: resource
+  host: resource
+  path: resource-oauth2/target/resource-oauth2-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+- name: ui
+  host: ui
+  path: ui-oauth2/target/ui-oauth2-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+  - circuit-breaker
+  env: 
+    security_oauth2_client_clientSecret: XXXXX
+    security_oauth2_client_clientId: XXXXX
+    github_username: XXXXX
+    github_password: XXXXX
+env:
+  SPRING_PROFILES_ACTIVE: cloud,git
+  CF_TARGET: https://api.run.haas-85.pez.pivotal.io

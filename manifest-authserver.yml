@@ -1,0 +1,22 @@
+---
+instances: 1
+memory: 512M
+applications:
+- name: resource
+  host: resource
+  path: resource-oauth2/target/resource-oauth2-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+- name: ui
+  host: ui
+  path: ui-oauth2/target/ui-oauth2-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+  - circuit-breaker
+env:
+  SPRING_PROFILES_ACTIVE: cloud,authservercloud
+#  GRANT_TYPE: authorization_code
+  CF_TARGET: https://api.local2.pcfdev.io
+ 
