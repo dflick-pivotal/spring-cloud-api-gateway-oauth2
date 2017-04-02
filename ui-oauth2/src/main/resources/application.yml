@@ -2,15 +2,6 @@ spring:
   aop:
     proxy-target-class: true
 
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-  health:
-    sensitive: false
-  hypermedia:
-    enabled: true      
 logging:
   level:
     org.springframework.security: INFO
