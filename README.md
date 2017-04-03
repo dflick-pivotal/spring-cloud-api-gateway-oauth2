@@ -1,22 +1,22 @@
 # spring-cloud-api-gateway-oauth2
 
-Project: Simple microservice example of two microservices consuming Pivotal Spring Cloud Services. Microservices are secured via OAuth2. Pivotal SSO Service is a OAuth2 token provider with integration into identity providers. Config server for microservice configuration, service registry for microservice discovery,
-![GitHub Logo](/images/registry.png)
-
-circuit breaker for microservice fault tolerance and monitoring.
-![GitHub Logo](/images/hystrix.png)
-
+Project: Simple microservice example of two microservices secured via OAuth2.
 Ui shows a greeting from resource.
 ![GitHub Logo](/images/ui.png)
 
-These are Pivotal provided services consumed by the microservices.
-
-![GitHub Logo](/images/services.png)
+The microservices consume Pivotal Spring Cloud Services and Pivotal Single-Sign-On Service.  
 
 - [Pivotal Single-Sign-On Services](https://docs.pivotal.io/p-identity/1-3/index.html)
 - [Pivotal Spring Cloud Services(Eureka, Hystrix, Config Server) ](http://docs.pivotal.io/spring-cloud-services/1-3/common/index.html)
+microservice registry
+![GitHub Logo](/images/registry.png)
+circuit breaker for microservice fault tolerance and monitoring.
+![GitHub Logo](/images/hystrix.png)
 
-ui-oauth2 and resource-oauth2 spring boot applications.
+Pivotal provided services consumed by the microservices.
+![GitHub Logo](/images/services.png)
+
+Microservices: ui-oauth2 and resource-oauth2 spring boot applications.
 
 [ui-oauth2](/ui-oauth2):
 - login ui.
@@ -26,7 +26,6 @@ ui-oauth2 and resource-oauth2 spring boot applications.
 
 [resource-oauth2](/resource-oauth2):
 - resource answers if the user has permission (right OAuth2 scope).
-
 ![GitHub Logo](/images/scope.png)
 
 # Prerequisites
