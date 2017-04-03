@@ -35,6 +35,7 @@ Microservices: ui-oauth2 and resource-oauth2 spring boot applications.
 - clone the repo
 - cd spring-cloud-api-gateway-oauth2
 - git branch sso
+- edit CF_TARGET in [manifest.yml](/manifest.yml) to point to your PCF api endpoint
 - mvn package
 - [Manage Service Plans](http://docs.pivotal.io/p-identity/1-3/manage-service-plans.html)
   ![GitHub Logo](/images/plan.png)
