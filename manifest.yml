@@ -20,5 +20,5 @@ applications:
 env:
   SPRING_PROFILES_ACTIVE: cloud,sso
 #  GRANT_TYPE: authorization_code
-  CF_TARGET: https://api.cf.mainz4.net
+  CF_TARGET: YOUR_PCF_API_END_POINT
  
