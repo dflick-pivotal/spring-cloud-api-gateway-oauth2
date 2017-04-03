@@ -1,10 +1,15 @@
 # spring-cloud-api-gateway-oauth2
 
-Project: Simple microservice example of two microservices consuming Pivotal Spring Cloud Services. Microservices are secured via OAuth2. Pivotal SSO Service is used as identity provider and OAuth2 token provider.
+Project: Simple microservice example of two microservices consuming Pivotal Spring Cloud Services. Microservices are secured via OAuth2. Pivotal SSO Service is a OAuth2 token provider with integration into identity providers. Config server for microservice configuration, service registry for microservice discovery,
+![GitHub Logo](/images/registry.png)
 
+circuit breaker for microservice fault tolerance and monitoring.
+![GitHub Logo](/images/hystrix.png)
+
+Ui shows a greeting from resource.
 ![GitHub Logo](/images/ui.png)
 
-These are the Pivotal provided services consumed by the microservices.
+These are Pivotal provided services consumed by the microservices.
 
 ![GitHub Logo](/images/services.png)
 
@@ -25,11 +30,9 @@ ui-oauth2 and resource-oauth2 spring boot applications.
 ![GitHub Logo](/images/scope.png)
 
 # Prerequisites
-
 - a Pivotal CF instance with Pivotal Single-Sign-On service and Pivotal Spring Cloud Services
 
 # Run it on PCF
-
 - clone the repo
 - cd spring-cloud-api-gateway-oauth2
 - git branch sso
