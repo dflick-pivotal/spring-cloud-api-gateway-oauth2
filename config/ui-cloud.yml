@@ -10,3 +10,10 @@ ribbon:
 management:
   security:
     enabled: false
+
+security:
+  oauth2:
+    client:
+      pre-established-redirect-uri: https://${vcap.application.uris[0]}/login
+      registered-redirect-uri: https://${vcap.application.uris[0]}/login
+      use-current-uri: false 
