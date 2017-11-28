@@ -54,3 +54,12 @@ Microservices: ui-oauth2 and resource-oauth2 spring boot applications.
 [Pivotal CF Metrics](https://docs.pivotal.io/pcf-metrics/1-3/index.html)
 
 ![GitHub Logo](/images/trace.png)
+
+# C2C
+```
+cf app resource --guid
+0d58d899-f055-46b7-9c3d-95ea5c0174de
+Griffon:spring-cloud-api-gateway-oauth2 dflick$ cf app ui --guid
+4fa656d5-e5ef-48b9-9564-0b63bafa34da
+cf curl -H "Content-Type: application/json" -X POST /networking/v0/external/policies -d '{"policies": [{"source": {"id": "4fa656d5-e5ef-48b9-9564-0b63bafa34da"},"destination": {"id": "0d58d899-f055-46b7-9c3d-95ea5c0174de","protocol": "tcp","port": 8080}}]}'
+´´´
