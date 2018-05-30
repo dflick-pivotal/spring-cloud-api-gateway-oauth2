@@ -3,15 +3,15 @@ instances: 1
 memory: 1G
 applications:
 - name: resource
-  host: resource
   path: resource-oauth2/target/resource-oauth2-0.0.1-SNAPSHOT.jar
+  random-route: true
   services:
   - config-server
   - service-registry
   - sso
 - name: ui
-  host: ui
   path: ui-oauth2/target/ui-oauth2-0.0.1-SNAPSHOT.jar
+  random-route: true
   services:
   - config-server
   - service-registry
