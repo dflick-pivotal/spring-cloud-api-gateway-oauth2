@@ -4,9 +4,6 @@ zuul:
       path: /resource/**
       serviceId: resource
 
-ribbon:
-  IsSecure: false
-
 management:
   security:
     enabled: false
