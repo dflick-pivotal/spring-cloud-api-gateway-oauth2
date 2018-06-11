@@ -18,7 +18,8 @@ applications:
   - circuit-breaker
   - sso
 env:
-  SPRING_PROFILES_ACTIVE: cloud,sso
+  SPRING_PROFILES_ACTIVE: cloud
 #  GRANT_TYPE: authorization_code
-  CF_TARGET: https://api.SYSTEM_DOMAIN
+#  TRUST_CERTS: api.SYSTEM_DOMAIN
+  TRUST_CERTS: api.sys.livingston.cf-app.com
  
